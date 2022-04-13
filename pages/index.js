@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Jibber Beta</title>
+        <title>Jibber</title>
         <meta
           name='description'
           content='Jibber is a messaging app for those you are closest too. With a reimagined experience designed to encourage empathy and understanding.'
@@ -61,7 +61,7 @@ export default function Home() {
       <form onSubmit={handleSubmit}>
         <div className='absolute -inset-0 overflow-hidden flex flex-col justify-center mx-auto px-4 dark:bg-black'>
           <h1 className='text-4xl m-5 sm:m-10 sm:block font-bold text-center dark:text-white'>
-            Jibber Beta
+            Jibber
           </h1>
           <div className='flex justify-center w-full'>
             {smsMessageSent ? (
