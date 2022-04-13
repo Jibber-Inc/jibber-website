@@ -14,22 +14,22 @@ export default async (req, res) => {
 
     if (!phoneNumber) throw new Error('phone number required');
 
-    const { OURS_API_MASTER_KEY, OURS_API_URL, OURS_API_APP_ID } = process.env;
+    const { JIBBER_API_MASTER_KEY, JIBBER_API_URL, JIBBER_API_APP_ID } = process.env;
 
-    if (!OURS_API_URL) throw new Error('ours api url is required');
-    if (!OURS_API_APP_ID) throw new Error('app id is required');
-    if (!OURS_API_MASTER_KEY)
+    if (!JIBBER_API_URL) throw new Error('ours api url is required');
+    if (!JIBBER_API_APP_ID) throw new Error('app id is required');
+    if (!JIBBER_API_MASTER_KEY)
       throw new Error('api key is required to send sms');
 
     const message = `Open the app to verify your phone number. https://ourown.chat/onboarding?phoneNumber=${phoneNumber}`;
     const { data } = await axios.post(
-      `${OURS_API_URL}/functions/sendMessage`,
+      `${JIBBER_API_URL}/functions/sendSMS`,
       { phoneNumber, message },
       {
         headers: {
           'Content-Type': 'application/json',
-          'X-Parse-Application-Id': OURS_API_APP_ID,
-          'X-Parse-Master-Key': OURS_API_MASTER_KEY,
+          'X-Parse-Application-Id': JIBBER_API_APP_ID,
+          'X-Parse-Master-Key': JIBBER_API_MASTER_KEY,
         },
       }
     );

@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ours app</title>
+        <title>Jibber App</title>
         <meta
           name='description'
           content='The need to feel known is core to the human experience. That’s why we believe we can not advance as a society without a radical change to how we communicate online and we are doing so.'
@@ -90,11 +90,10 @@ export default function Home() {
                 /> */}
                 <PhoneInput
                   id='phone-number'
-                  className={`appearance-none border block w-full bg-grey-lighter text-grey-darker rounded py-3 px-4 mb-3 mr-0 sm:mb-0 sm:mr-3 bg-white ${
-                    needsNumberVerification
-                      ? 'border border-red-500 text-red-500'
-                      : ''
-                  }`}
+                  className={`appearance-none border block w-full bg-grey-lighter text-grey-darker rounded py-3 px-4 mb-3 mr-0 sm:mb-0 sm:mr-3 bg-white ${needsNumberVerification
+                    ? 'border border-red-500 text-red-500'
+                    : ''
+                    }`}
                   placeholder='+1 617 253 5702'
                   onChange={(value) => setPhoneNumber(value)}
                   defaultCountry={countryCode}
@@ -134,7 +133,7 @@ export default function Home() {
             )}
           </div>
           <div className='absolute left-0 bottom-5 font-normal text-gray-400 text-sm w-full flex justify-center'>
-            2020 - Ours rights reserved
+            {new Date().getFullYear()} - Jibber rights reserved
           </div>
         </div>
       </form>
