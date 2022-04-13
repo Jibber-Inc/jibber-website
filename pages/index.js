@@ -50,10 +50,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Jibber App</title>
+        <title>Jibber Beta</title>
         <meta
           name='description'
-          content='The need to feel known is core to the human experience. That’s why we believe we can not advance as a society without a radical change to how we communicate online and we are doing so.'
+          content='Jibber is a messaging app for those you are closest too. With a reimagined experience designed to encourage empathy and understanding.'
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
@@ -61,7 +61,7 @@ export default function Home() {
       <form onSubmit={handleSubmit}>
         <div className='absolute -inset-0 overflow-hidden flex flex-col justify-center mx-auto px-4 dark:bg-black'>
           <h1 className='text-4xl m-5 sm:m-10 sm:block font-bold text-center dark:text-white'>
-            We made this for you. Join us.
+            Jibber Beta
           </h1>
           <div className='flex justify-center w-full'>
             {smsMessageSent ? (
@@ -126,7 +126,7 @@ export default function Home() {
                       ></path>
                     </svg>
                   ) : (
-                    <>Join</>
+                    <>Join the waitlist</>
                   )}
                 </button>
               </div>
