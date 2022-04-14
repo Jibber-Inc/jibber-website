@@ -1,5 +1,7 @@
-import Head from 'next/head';
+
 import React, { useState } from 'react';
+import { Header } from '../components/layout/Header';
+import { Footer } from '../components/layout/Footer';
 import { PhoneForm } from '../components/PhoneForm';
 import { ThankYou } from '../components/ThankYou';
 
@@ -9,14 +11,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Jibber App</title>
-        <meta
-          name='description'
-          content='The need to feel known is core to the human experience. That’s why we believe we can not advance as a society without a radical change to how we communicate online and we are doing so.'
-        />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
+      <Header />
 
       <div className='absolute -inset-0 overflow-hidden flex flex-col justify-center mx-auto px-4 dark:bg-black'>
         {joinClicked ?
@@ -44,9 +39,7 @@ export default function Home() {
         }
       </div>
 
-      <div className='absolute left-0 bottom-5 font-normal text-gray-400 text-sm w-full flex justify-center'>
-        {new Date().getFullYear()} - Jibber rights reserved
-      </div>
+      <Footer />
     </>
   );
 }
