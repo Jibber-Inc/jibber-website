@@ -8,6 +8,11 @@ module.exports = {
             key: 'Content-Type',
             value: 'application/json',
           },
+          {
+            "appclips": {
+                "apps": [ "863YH82QFN.com.Jibber-Inc.iOS.Clip" ]
+            }
+          },
         ],
       },
     ];
