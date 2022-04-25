@@ -27,7 +27,7 @@ export default function Home() {
             <h1 className='text-4xl my-3 sm:m-3 sm:block font-bold text-center dark:text-white'>
               Jibber
             </h1>
-            <p className={'text-center dark:text-white'}>You get me.</p>
+            <p className='text-center dark:text-white'>You get me.</p>
             <button
               className='mx-auto py-3 mt-10 w-1/5 rounded-md bg-green-400 text-white disabled:opacity-40 transition duration-500 ease-in-out'
               type='button'
