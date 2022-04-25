@@ -8,13 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "autoprefixer": "^10.1.0",
-    "axios": "^0.21.1",
-    "next": "^10.0.4",
+    "autoprefixer": "10.4.5",
+    "axios": "^0.26.1",
+    "next": "12.1.5",
     "postcss": "^8.2.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-phone-number-input": "^3.1.8",
-    "tailwindcss": "^2.0.2"
+    "react-phone-number-input": "3.1.51",
+    "tailwindcss": "3.0.24"
   }
 }

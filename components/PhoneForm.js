@@ -65,7 +65,7 @@ export const PhoneForm = ({ onMessageSent }) => {
 
         />
         <button
-          className='py-3 px-20 flex items-center justify-center rounded-md bg-green-400 text-white w-full sm:w-auto disabled:opacity-40 transition duration-500 ease-in-out'
+          className='py-3 w-full sm:w-48 flex items-center justify-center rounded-md bg-jibber text-white disabled:opacity-40 transition duration-500 ease-in-out'
           type='submit'
           disabled={phoneNumber === '' || submitingForm || needsNumberVerification}
         >

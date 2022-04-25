@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Header />
 
-      <div className='absolute -inset-0 overflow-hidden flex flex-col justify-center mx-auto px-4 dark:bg-black'>
+      <div className='absolute -inset-0 overflow-hidden flex flex-col justify-center mx-auto px-4 dark:bg-jibber-bg'>
         {joinClicked ?
           <div className='flex justify-center w-full'>
             {smsMessageSent ? (
@@ -29,7 +29,7 @@ export default function Home() {
             </h1>
             <p className='text-center dark:text-white'>You get me.</p>
             <button
-              className='mx-auto py-3 mt-10 w-1/5 rounded-md bg-green-400 text-white disabled:opacity-40 transition duration-500 ease-in-out'
+              className='mx-auto py-3 px-3 mt-10 sm:w-1/4 w-1/2 rounded-md bg-jibber text-white disabled:opacity-40 transition duration-500 ease-in-out'
               type='button'
               onClick={() => setJoinClicked(true)}
             >
