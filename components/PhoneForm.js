@@ -8,12 +8,12 @@ export const PhoneForm = ({ onMessageSent }) => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [submitingForm, setSubmitingForm] = useState(false);
   const [needsNumberVerification, setNeedsNumberVerification] = useState(false);
-  const [countryCode, setCountryCode] = useState();
+  const [countryCode, setCountryCode] = useState('US');
 
   useEffect(() => {
     const fetchIpData = async () => {
       const result = await axios.get(
-        'https://api.ipregistry.co/?key=tn16dlddakjvm1'
+        'https://api.ipregistry.co/?key=lmgg5rv8lidabc9e'
       );
       setCountryCode(result?.data?.location?.country?.code);
     };
