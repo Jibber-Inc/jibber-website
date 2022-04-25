@@ -15,7 +15,7 @@ export default async (req, res) => {
     if (!phoneNumber) throw new Error('phone number required');
 
     const { JIBBER_API_MASTER_KEY, JIBBER_API_URL, JIBBER_API_APP_ID } = process.env;
-
+    
     if (!JIBBER_API_URL) throw new Error('Jibber api url is required');
     if (!JIBBER_API_APP_ID) throw new Error('Jibber id is required');
     if (!JIBBER_API_MASTER_KEY)
