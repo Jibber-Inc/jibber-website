@@ -15,13 +15,13 @@ export default async (req, res) => {
     if (!phoneNumber) throw new Error('phone number required');
 
     const { JIBBER_API_MASTER_KEY, JIBBER_API_URL, JIBBER_API_APP_ID } = process.env;
-
-    if (!JIBBER_API_URL) throw new Error('jibber api url is required');
-    if (!JIBBER_API_APP_ID) throw new Error('app id is required');
+    
+    if (!JIBBER_API_URL) throw new Error('Jibber api url is required');
+    if (!JIBBER_API_APP_ID) throw new Error('Jibber id is required');
     if (!JIBBER_API_MASTER_KEY)
       throw new Error('api key is required to send sms');
 
-    const message = `Open Jibber to verify your phone number and join the waitlist. https://joinjibber.com/onboarding?phoneNumber=${phoneNumber}`;
+    const message = `Open the app to verify your phone number. https://joinjibber.com/onboarding?phoneNumber=${phoneNumber}`;
     const { data } = await axios.post(
       `${JIBBER_API_URL}/functions/sendSMS`,
       { phoneNumber, message },
