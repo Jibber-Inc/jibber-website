@@ -10,7 +10,7 @@ export default function Home() {
           content='app-id=863YH82QFN, app-clip-bundle-id=com.Jibber-Inc.iOS.Clip, affiliate-data=myAffiliateData, app-argument=myAppArgument'
         />
       </Head>
-      <h1>Onboarding</h1>
+      <h1>Pass</h1>
     </>
   );
 }
