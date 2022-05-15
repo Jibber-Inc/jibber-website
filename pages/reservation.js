@@ -6,7 +6,7 @@ export default function Home() {
       <Head>
         <meta
           name='apple-itunes-app'
-          content='app-id=1547196052, app-clip-bundle-id=com.Benji.Ours.AppClip, affiliate-data=myAffiliateData, app-argument=myAppArgument'
+          content='app-id=863YH82QFN, app-clip-bundle-id=com.Jibber-Inc.iOS.Clip, affiliate-data=myAffiliateData, app-argument=myAppArgument'
         />
       </Head>
       <h1>Reservation</h1>
