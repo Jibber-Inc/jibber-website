@@ -10,6 +10,8 @@ export const Header = () => {
         content='Jibber is a messaging app for those you are closest too. With a reimagined experience designed to encourage empathy and understanding.'
       />
       <link rel='icon' href='/white_logo_round.png' />
+      <meta property="og:image" content="https://joinjibber.com/appclip_icon_dark.png"/> 
+      <meta name="apple-itunes-app" content="app-clip-bundle-id=com.Jibber-Inc.iOS.Clip, app-clip-display=card"/>
     </Head>
   );
 };
