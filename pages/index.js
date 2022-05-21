@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Header />
       <meta property="og:image" content="https://joinjibber.com/appclip_icon_dark.png"/> 
-      <meta name="apple-itunes-app" content="app-id=863YH82QFN, app-clip-bundle-id=com.Jibber-Inc.iOS.Clip, app-clip-display=card"/>
+      <meta name="apple-itunes-app" content="app-clip-bundle-id=com.Jibber-Inc.iOS.Clip, app-clip-display=card"/>
 
       <div className='absolute -inset-0 overflow-hidden flex flex-col justify-center mx-auto px-4 dark:bg-jibber-bg'>
         {joinClicked ?
