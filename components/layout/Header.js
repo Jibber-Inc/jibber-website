@@ -11,7 +11,7 @@ export const Header = () => {
       />
       <link rel='icon' href='/favicon.png' />
       <meta property="og:image" content="https://joinjibber.com/appclip_icon_dark.png"/> 
-      <meta name="apple-itunes-app" content="app-clip-bundle-id=com.Jibber-Inc.iOS.Clip, app-clip-display=card, app-id=1602024272"/>
+      <meta name="apple-itunes-app" content="app-clip-bundle-id=com.Jibber-Inc.iOS.Clip, app-clip-display=card"/>
     </Head>
   );
 };
